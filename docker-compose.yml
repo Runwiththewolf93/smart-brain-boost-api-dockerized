@@ -1,6 +1,6 @@
-version: '3.8'
-services:
+version: "3.8"
 
+services:
   # PostgreSQL
   postgres:
     container_name: postgres
@@ -24,7 +24,7 @@ services:
   # Backend
   smart-brain-api:
     # env_file:
-    #   - ./.private/api-keys.env "Another way to insert env variables" 
+    #   - ./.private/api-keys.env "Another way to insert env variables"
     container_name: backend
     build: ./
     volumes:
@@ -40,4 +40,3 @@ services:
     # links:
     #   - postgres
     #   - redis
-    
